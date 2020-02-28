@@ -1,0 +1,51 @@
+#delpopup-container{
+  display: flex;
+  position: fixed;
+  top:0;
+  right: 0;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba($color: #fff, $alpha: 0.75);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+
+  #delpopup-wrapper{
+    background-color:#fff;
+    max-width: 300px;
+    height: 175px;
+    width: 95%;
+    border-radius: 2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 5px 1.5px rgba($color: #000000, $alpha: 0.085);
+    
+    .options{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+
+      .button-option{
+        width: 100px;
+        height:40px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        
+      }
+      .cancel{
+        background-color: #ff9f1c;
+        margin:auto
+
+      }
+      .delete{
+        background-color: #EA4335;
+        margin:auto
+      }
+    }
+  }
+} 
